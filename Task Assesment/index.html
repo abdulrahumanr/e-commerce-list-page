@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce List Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>E-commerce Store</h1>
+  </header>
+
+  <!-- Main Content Container -->
+  <div class="main-container">
+    <!-- Filter Bar (Left Side) -->
+    <div class="filter-bar">
+      <h3>Filter Products</h3>
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home">Home</option>
+      </select>
+
+      <!-- Price Range Filter -->
+      <div class="price-range-container">
+        <label for="price-filter">Price Range</label>
+        <input type="range" id="price-filter" min="0" max="500" step="10">
+        <span id="price-range">Price: $0 - $500</span>
+      </div>
+
+      <select id="sort-filter">
+        <option value="low-to-high">Price: Low to High</option>
+        <option value="high-to-low">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Product Grid (Right Side) -->
+    <div class="product-grid">
+      <!-- Product Cards will be added here dynamically -->
+    </div>
+  </div>
+
+  <!-- Cart Notification -->
+  <div id="cart-notification" class="cart-notification">
+    <span>Item added to cart!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
